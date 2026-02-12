@@ -1,9 +1,9 @@
 // StatCard.js
 "use client";
 
-import { LineChart, Line, ResponsiveContainer } from "recharts";
+import { LineChart, Line, ResponsiveContainer, Tooltip } from "recharts";
 
-
+// Different wavy patterns for each card
 const dataPatterns = {
   "Total Unique Pageviews": [
     { v: 40 }, { v: 65 }, { v: 45 }, { v: 50 }, { v: 48 }, { v: 52 }, { v: 50 }, { v: 58 },
@@ -38,6 +38,16 @@ export default function StatCard({ title, value }) {
       <div className="flex-1 min-h-10">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
+            <Tooltip 
+              contentStyle={{ 
+                backgroundColor: '#fff', 
+                border: '1px solid #e2e8f0',
+                borderRadius: '4px',
+                padding: '4px 8px',
+                fontSize: '12px'
+              }}
+              labelStyle={{ display: 'none' }}
+            />
             <Line 
               type="linear" 
               dataKey="v" 
