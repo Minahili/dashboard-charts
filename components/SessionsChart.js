@@ -1,4 +1,4 @@
-// SessionsChart.js - PADDING KAM
+// SessionsChart.js
 "use client";
 
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Tooltip } from "recharts";

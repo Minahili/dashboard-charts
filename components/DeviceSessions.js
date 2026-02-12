@@ -1,4 +1,4 @@
-// DeviceSessions.js - PADDING KAM
+// DeviceSessions.js 
 "use client";
 
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from "recharts";

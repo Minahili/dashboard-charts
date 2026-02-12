@@ -3,7 +3,7 @@
 
 import { LineChart, Line, ResponsiveContainer } from "recharts";
 
-// Different wavy patterns for each card
+
 const dataPatterns = {
   "Total Unique Pageviews": [
     { v: 40 }, { v: 65 }, { v: 45 }, { v: 50 }, { v: 48 }, { v: 52 }, { v: 50 }, { v: 58 },

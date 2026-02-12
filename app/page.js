@@ -35,7 +35,7 @@ export default function Home() {
               <StatCard title="Bounce %" value="21.6%"  />
             </div>
 
-            {/* Middle charts row - HEIGHT KAM KI */}
+            {/* Middle charts row */}
             <div className="flex gap-4 flex-shrink-0 mt-2" style={{ height: '170px' }}>
               <div className="w-1/4 h-full">
                 <DeviceSessions />
@@ -48,7 +48,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Bottom charts row - HEIGHT KAM KI */}
+            {/* Bottom charts row  */}
             <div className="flex gap-3 flex-shrink-0 mt-6" style={{ height: '170px' }}>
               <div className="w-1/2 h-full">
                 <SessionsByDevice />

@@ -12,7 +12,7 @@ import {
   AreaChart
 } from "recharts";
 const data = [
-  // 2017 - Sab niche, Desktop wavy
+  // 2017 -
   { name: 'Jul 2017', Desktop: 1800, Mobile: 2200, Tablet: 600 },
   { name: 'Aug 2017', Desktop: 2100, Mobile: 2400, Tablet: 650 },
   { name: 'Sep 2017', Desktop: 1600, Mobile: 2600, Tablet: 700 },
@@ -23,7 +23,7 @@ const data = [
   // Jan 2018 - Desktop BIG SPIKE
   { name: 'Jan 2018', Desktop: 20000, Mobile: 3500, Tablet: 900 },
   
-  // 2018 - Desktop gir gaya aur wavy (zigzag)
+  // 2018 
   { name: 'Feb 2018', Desktop: 5800, Mobile: 4000, Tablet: 1000 },
   { name: 'Mar 2018', Desktop: 6200, Mobile: 4800, Tablet: 1100 },
   { name: 'Apr 2018', Desktop: 5300, Mobile: 5800, Tablet: 1200 },
@@ -36,7 +36,6 @@ const data = [
   { name: 'Nov 2018', Desktop: 6900, Mobile: 11900, Tablet: 1900 },
   { name: 'Dec 2018', Desktop: 6500, Mobile: 12000, Tablet: 2000 },
   
-  // 2019 - Desktop still wavy (up-down)
   { name: 'Jan 2019', Desktop: 7100, Mobile: 14600, Tablet: 2100 },
   { name: 'Feb 2019', Desktop: 6800, Mobile: 13600, Tablet: 2200 },
   { name: 'Mar 2019', Desktop: 7400, Mobile: 16400, Tablet: 2300 },

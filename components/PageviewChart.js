@@ -1,4 +1,4 @@
-// PageviewsChart.js - PADDING KAM
+// PageviewsChart.js
 "use client";
 
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
