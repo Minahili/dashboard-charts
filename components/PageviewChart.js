@@ -1,3 +1,4 @@
+// PageviewsChart.js - PADDING KAM
 "use client";
 
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
@@ -33,19 +34,31 @@ const data = generateMonthlyData();
 
 export default function PageviewsChart() {
   return (
-    <div className="bg-white p-3 shadow-[0_2px_8px_rgba(0,0,0,0.08)]">
-      <h3 className="text-base font-semibold text-[#1e293b] mb-2 text-center">
+    <div className="bg-white p-3 shadow-[0_2px_8px_rgba(0,0,0,0.08)] h-full w-[549px] flex flex-col">
+      <h3 className="text-sm font-semibold text-[#1e293b] mb-2 text-center flex-shrink-0">
         Pageviews
       </h3>
-      <ResponsiveContainer width="100%" height={150}>
-        <BarChart data={data} barSize={12} margin={{ top: 3, right: 10, bottom: 9, left: -10 }}>
-          <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" vertical={false} />
-          <XAxis dataKey="shortName" tick={{ fill: "#64748b", fontSize: 10 }} axisLine={false} tickLine={false} interval={0} />
-          <YAxis tick={{ fill: "#64748b", fontSize: 11 }} axisLine={false} tickLine={false} ticks={[0, 50000]} tickFormatter={(value) => `${value / 1000}K`} domain={[0, 50000]} />
-          <Tooltip />
-          <Bar dataKey="value" fill="#4d8ba3" radius={[2, 2, 0, 0]} />
-        </BarChart>
-      </ResponsiveContainer>
+      <div className="flex-1 min-h-0">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart
+  data={data}
+  barSize={12}
+  barCategoryGap="-1%"
+  barGap={0}
+  margin={{ top: 10, right: 10, bottom: -2, left: -20 }}
+>
+            <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" vertical={false} />
+            <XAxis dataKey="shortName" tick={{ fill: "#64748b", fontSize: 9 }} axisLine={false} tickLine={false} interval={0} />
+            <YAxis tick={{ fill: "#64748b", fontSize: 10 }} axisLine={false} tickLine={false} ticks={[0, 50000]} tickFormatter={(value) => `${value / 1000}K`} domain={[0, 50000]} />
+            <Tooltip />
+            <Bar
+  dataKey="value"
+  fill="#1d6885"
+  radius={[2, 2, 0, 0]}
+/>
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   );
 }
